@@ -142,9 +142,7 @@
     outline: none;
   }
 
-  .b1{
-    ;
-  }
+  
 
     
 
@@ -167,12 +165,12 @@
       <a href=""><img src="https://see.fontimg.com/api/renderfont4/rg9Rx/eyJyIjoiZnMiLCJoIjo1NiwidyI6MTI1MCwiZnMiOjQ1LCJmZ2MiOiIjRUZFOEU4IiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/QXJlIHlvdSByZWFkeSB0byBnZXQgb25ib2FyZCBhcyBzYWlsb3Igb2YgbXnCoGxpZmVib2F0ICA_/ananda-black-personal-use-regular.png" alt="Calligraphy fonts">
         <img class="a" src="q1.png" alt=""></a>
         <p></p>
-        <a href="index2.html"><button class="button-82-pushable b1" role="button">
+        <button onclick="add()" id ="tsparticles" class="button-82-pushable" role="button">
           <span class="button-82-shadow"></span>
           <span class="button-82-edge"></span>
           <span class="button-82-front text">
             Yes
-          </span></a>
+          </span>
         </button><button id="followCursorBtn" class="button-82-pushable" role="button">
           <span class="button-82-shadow"></span>
           <span class="button-82-edge"></span>
@@ -185,6 +183,7 @@
 
     </div>
 
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 <script>
  const button = document.getElementById("followCursorBtn");
 let isFollowing = false;
@@ -233,6 +232,30 @@ function followCursor(e) {
 
 
 
+
+
+  
+    function add(){
+      
+      const jsConfetti = new JSConfetti()
+      jsConfetti.addConfetti({emojis: ['❤️'],
+    });
+    setTimeout(function(){
+      let con = document.getElementsByClassName('container');
+
+      window.location.href = "yes.html";
+
+    },3000);
+      
+    
+    
+    }
+
+    
+
+
 </script>
-    </body>
+
+
+</body>
 </html>
